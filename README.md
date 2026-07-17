@@ -8,6 +8,10 @@ Laboratorio y **CLI de auditoría** para inventariar permisos, configuración, s
 
 **Agent Hacking Tools — Surface Auditor** es una CLI interactiva en Python que analiza instalaciones de Codex (directorios `.codex`), evalúa permisos del sistema de ficheros, extrae políticas de sandbox/aprobación, enumera skills y detecta superficies de escalada (config o skills escribibles).
 
+**Demo en vídeo:** [Agent Hacking Tools — Surface Auditor](https://youtu.be/k7eNc1mPccc)
+
+[![Demo en YouTube — Agent Hacking Tools Surface Auditor](https://img.youtube.com/vi/k7eNc1mPccc/0.jpg)](https://youtu.be/k7eNc1mPccc)
+
 ![Agent Hacking Tools — Surface Auditor](Agent-Tool.png)
 
 ---
