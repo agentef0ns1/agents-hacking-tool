@@ -1,0 +1,13 @@
+{
+  "name": "tfm-codex-poc",
+  "private": true,
+  "description": "PoC Codex CLI local para laboratorio 6.1.4",
+  "scripts": {
+    "setup": "./scripts/setup-ollama.sh",
+    "launch": "./scripts/launch-ollama.sh",
+    "audit": "./scripts/audit-surface.sh"
+  },
+  "dependencies": {
+    "@openai/codex": "^0.144.4"
+  }
+}

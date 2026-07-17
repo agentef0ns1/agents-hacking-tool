@@ -1,0 +1,4 @@
+FROM phi4-mini:latest
+PARAMETER num_ctx 1024
+PARAMETER low_vram true
+PARAMETER num_batch 64

@@ -1,0 +1,6 @@
+node_modules
+bin
+.env
+*.audit-bak-*
+.codex/config.toml.audit-bak-*
+AGENTS.md.audit-bak-*

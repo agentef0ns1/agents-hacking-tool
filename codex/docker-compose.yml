@@ -1,0 +1,23 @@
+services:
+  codex-lab:
+    build:
+      context: ..
+      dockerfile: codex/Dockerfile
+    image: agent-lab-codex:latest
+    container_name: codex-lab
+    user: codex
+    stdin_open: true
+    tty: true
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-phi4-mini:latest}
+      CODEX_PROFILE: ${CODEX_PROFILE:-ollama-launch}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    working_dir: /opt/lab/codex
+    volumes:
+      - codex-home:/home/codex
+    command: []
+
+volumes:
+  codex-home:

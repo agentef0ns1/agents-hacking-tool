@@ -1,0 +1,22 @@
+# Perfil de laboratorio Codex — permisos restrictivos para CTF §6.1.4
+# Copiar a ~/.codex/config.toml o fusionar con la config existente.
+
+model = "phi4-mini:latest"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+allow_login_shell = false
+
+[sandbox_workspace_write]
+network_access = false
+writable_roots = []
+exclude_slash_tmp = true
+
+[[skills.config]]
+path = ".codex/skills/poc-recon"
+enabled = true
+
+# Ejemplo de reglas exec (execpolicy) — documentar en auditoría
+# [permissions.bash]
+# "git *" = "allow"
+# "rm *" = "deny"
+# "*" = "ask"
